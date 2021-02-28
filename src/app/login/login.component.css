@@ -17,6 +17,7 @@
     position: relative;
     bottom: 285px;
     right: 15px;
+    margin-bottom: -285px;
 }
 
 .card {
