@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { RoutePath } from 'src/app/model';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
-  constructor() { }
+  constructor(private navigationService: NavigationService) { }
 
-  ngOnInit(): void {
+  navigateToDashBoard() {
+    this.navigationService.navigateForward(RoutePath.DASHBOARD);
   }
-
 }

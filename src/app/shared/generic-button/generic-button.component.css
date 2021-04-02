@@ -1,0 +1,94 @@
+.aqua-container {
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 25px;
+    background-color: #43D8C9;
+    width: 87%;
+    height: 3.5rem;
+  }
+
+  .button-text {
+    font-family: 'Saira Semi Condensed', sans-serif;
+      text-align: left;
+      padding-left: 2rem;
+      font-size: 1.5rem;
+      float: left;
+      padding-top: 0.7rem;
+  }
+
+  .circle {
+    margin-left: auto;
+    margin-right: 1rem;
+    background: #95389E;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    vertical-align: middle;
+    float: right;
+    margin-top: 0.6rem;
+}
+
+.circle::before {
+  content: "+";
+  font-size:2.5rem;
+  position: absolute;
+  display: block;
+  margin-left: 0.53rem;
+  top: 21%;
+  font-weight:bold;
+  font-family:courier;
+  color:#43D8C9;
+}
+
+@media only screen and (max-width: 1199px) {
+    .aqua-container {
+        width: 87%;
+        margin: 0.7rem;
+      }
+
+      .button-text {
+        text-align: left;
+        padding-left: 1.7rem;
+        font-size: 1.25rem;
+        float: left;
+        padding-top: 0.8rem;
+    }
+    .circle {
+        margin-right: .6rem;
+        width: 2em;
+        height: 2em;
+        margin-top: 0.75rem;
+    }
+    .circle::before {
+        font-size:2rem;
+        margin-left: 0.42rem;
+        top: 22%;
+      }
+}
+
+@media only screen and (max-width: 989px) {
+    .aqua-container {
+        width: 87%;
+        margin: 0.7rem;
+      }
+
+      .button-text {
+        text-align: left;
+        padding-left: 1rem;
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+    .circle {
+        margin-right: .4rem;
+        width: 1.5em;
+        height: 1.5em;
+        margin-top: 0.9rem;
+    }
+    .circle::before {
+        font-size:1.2rem;
+        margin-left: 0.38rem;
+        top: 31%;
+      }
+}
+
+ 
