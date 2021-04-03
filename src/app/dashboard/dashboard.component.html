@@ -9,10 +9,48 @@
             <app-friend-panel></app-friend-panel>
         </div>
         <div class="col-7">
-            
+            <div class="row">
+                <p class="subtext">
+                    <span>
+                        <strong>Question Filter</strong>
+                        <input class="search-input" type="text"/>
+                    </span></p>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-4">
+                    <p class="subtext"><strong>Easy</strong></p>
+                    <mat-list role="list">
+                        <cdk-virtual-scroll-viewport [itemSize]="10" class="viewport">
+                            <mat-list-item *cdkVirtualFor="let question of easyQuestionList" role="listitem">
+                                <span class="question-card">{{question.name}}</span>
+                            </mat-list-item>
+                        </cdk-virtual-scroll-viewport>
+                    </mat-list>
+                </div>
+                <div class="col-4">
+                    <p class="subtext"><strong>Medium</strong></p>
+                    <mat-list role="list">
+                        <cdk-virtual-scroll-viewport [itemSize]="10" class="viewport">
+                            <mat-list-item *cdkVirtualFor="let question of mediumQuestionList" role="listitem">
+                                <span class="question-card">{{question.name}}</span>
+                            </mat-list-item>
+                        </cdk-virtual-scroll-viewport>
+                    </mat-list>
+                </div>
+                <div class="col-4">
+                    <p class="subtext"><strong>Hard</strong></p>
+                    <mat-list role="list">
+                        <cdk-virtual-scroll-viewport [itemSize]="10" class="viewport">
+                            <mat-list-item *cdkVirtualFor="let question of hardQuestionList" role="listitem">
+                                <span class="question-card">{{question.name}}</span>
+                            </mat-list-item>
+                        </cdk-virtual-scroll-viewport>
+                    </mat-list>
+                </div>
+            </div>
         </div>
         <div class="col-2">
-            
+
         </div>
     </div>
     <div class="row">

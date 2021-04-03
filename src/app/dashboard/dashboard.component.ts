@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  easyQuestionList = [{name: 'easy1'},{name: 'easy1'},{name: 'easy1'},{name: 'easy1'},{name: 'easy1'},{name: 'easy1'},{name: 'easy1'}];
+  mediumQuestionList = [{name: 'medium1'},{name: 'medium1'},{name: 'medium1'},{name: 'medium1'},{name: 'medium1'},{name: 'medium1'}];
+  hardQuestionList = [{name: 'hard1'},{name: 'hard1'},{name: 'hard1'},{name: 'hard1'},{name: 'hard1'},{name: 'hard1'}];
+
   constructor() { }
 
   ngOnInit(): void {
