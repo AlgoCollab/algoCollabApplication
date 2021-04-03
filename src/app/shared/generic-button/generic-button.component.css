@@ -1,6 +1,6 @@
 .aqua-container {
     display: inline-block;
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
     border-radius: 25px;
     background-color: #43D8C9;
     width: 87%;
@@ -11,9 +11,9 @@
     font-family: 'Saira Semi Condensed', sans-serif;
       text-align: left;
       padding-left: 2rem;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       float: left;
-      padding-top: 0.7rem;
+      padding-top: 0.55rem;
   }
 
   .circle {
@@ -28,13 +28,17 @@
     margin-top: 0.6rem;
 }
 
+.circle:hover {
+  cursor: pointer;
+}
+
 .circle::before {
   content: "+";
   font-size:2.5rem;
-  position: absolute;
+  position: relative;
   display: block;
   margin-left: 0.53rem;
-  top: 21%;
+  bottom: 23%;
   font-weight:bold;
   font-family:courier;
   color:#43D8C9;
@@ -48,10 +52,10 @@
 
       .button-text {
         text-align: left;
-        padding-left: 1.7rem;
-        font-size: 1.25rem;
+        padding-left: 1.4rem;
+        font-size: 1.5rem;
         float: left;
-        padding-top: 0.8rem;
+        padding-top: 0.6rem;
     }
     .circle {
         margin-right: .6rem;
@@ -62,7 +66,7 @@
     .circle::before {
         font-size:2rem;
         margin-left: 0.42rem;
-        top: 22%;
+        bottom: 23%;
       }
 }
 
@@ -74,20 +78,20 @@
 
       .button-text {
         text-align: left;
-        padding-left: 1rem;
-        font-size: 1rem;
-        padding-top: 1rem;
+        padding-left: .8rem;
+        font-size: 1.25rem;
+        padding-top: .8rem;
     }
     .circle {
         margin-right: .4rem;
         width: 1.5em;
         height: 1.5em;
-        margin-top: 0.9rem;
+        margin-top: 1rem;
     }
     .circle::before {
         font-size:1.2rem;
         margin-left: 0.38rem;
-        top: 31%;
+        bottom: 10%;
       }
 }
 

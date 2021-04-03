@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FriendPanelComponent implements OnInit {
 
+mockFriends = ['Anthony', 'Braedan','Anthony', 'Braedan','Anthony', 'Braedan','Anthony', 'Braedan','Anthony', 'Braedan','Anthony', 'Braedan','Anthony', 'Braedan','Anthony', 'Braedan'];
+
   constructor() { }
 
   ngOnInit(): void {

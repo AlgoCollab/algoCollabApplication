@@ -10,6 +10,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FriendPanelComponent } from './friend-panel/friend-panel.component';
 import { GenericButtonComponent } from './shared/generic-button/generic-button.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatListModule } from '@angular/material/list';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { GenericButtonComponent } from './shared/generic-button/generic-button.c
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NoopAnimationsModule,
+    MatListModule,
+    ScrollingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

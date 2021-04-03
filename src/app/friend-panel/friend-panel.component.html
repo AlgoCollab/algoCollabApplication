@@ -3,6 +3,22 @@
         <div class="col">
             <div class="round-border">
                 <app-generic-button></app-generic-button>
+                <h4>Online</h4>
+                <mat-list role="list">
+                    <cdk-virtual-scroll-viewport [itemSize]="10" class="viewport">
+                        <mat-list-item *cdkVirtualFor="let name of mockFriends" role="listitem">
+                            <span class="list-item">{{name}}</span>
+                        </mat-list-item>
+                    </cdk-virtual-scroll-viewport>
+                </mat-list>
+                <h4>Offline</h4>
+                <mat-list role="list">
+                    <cdk-virtual-scroll-viewport [itemSize]="10" class="viewport">
+                        <mat-list-item *cdkVirtualFor="let name of mockFriends" role="listitem">
+                            <span class="list-item">{{name}}</span>
+                        </mat-list-item>
+                    </cdk-virtual-scroll-viewport>
+                </mat-list>
             </div>
         </div>
     </div>
